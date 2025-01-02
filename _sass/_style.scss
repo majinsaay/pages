@@ -243,11 +243,4 @@ table {
       }
     }
   }
- 
-  // Responsividade
-  @media (max-width: 768px) {
-    display: block;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-  }
- }
+}
