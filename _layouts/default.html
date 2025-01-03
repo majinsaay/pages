@@ -7,11 +7,25 @@
       <main>{{ content }}</main>
       <footer>{% include footer.html %}</footer>
     </div>
-
-    {% include link-previews.html wrapperQuerySelector="content" %}
   </body>
 </html>
 
+<!-- MathJax -->
 <script type="text/javascript" async
-  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+<script>
+  window.MathJax = {
+    options: {
+      enableMenu: false
+    }
+  };
+</script>
+
+<!-- Mermaid -->
+<script src=" https://cdn.jsdelivr.net/npm/mermaid@11.4.1/dist/mermaid.min.js "></script>
+<script>
+  mermaid.initialize({
+    theme: 'dark', // ou 'default', 'forest', 'neutral', 'base'
+  });
 </script>
